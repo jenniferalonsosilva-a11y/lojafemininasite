@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre a loja — Aurora Moda Feminina</title>
+<meta name="description" content="Conheça a Aurora: moda feminina versátil, escolhida peça a peça, com atendimento próximo e troca fácil.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="">
+
+<div class="topo-faixa">
+  Frete grátis acima de <strong>R$ 299</strong> &nbsp;·&nbsp; Primeira troca por nossa conta em até 30 dias
+</div>
+
+<header class="cabecalho">
+  <div class="container cabecalho-int">
+    <button class="acao btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-movel">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <ul>
+        <li><a class="nav-link" data-cat="novidades" href="categoria.html?cat=novidades">Novidades</a></li>
+        <li><a class="nav-link" data-cat="roupas" href="categoria.html?cat=roupas">Roupas</a></li>
+        <li><a class="nav-link" data-cat="vestidos" href="categoria.html?cat=vestidos">Vestidos</a></li>
+        <li><a class="nav-link" data-cat="conjuntos" href="categoria.html?cat=conjuntos">Conjuntos</a></li>
+        <li><a class="nav-link" data-cat="blusas" href="categoria.html?cat=blusas">Blusas</a></li>
+        <li><a class="nav-link" data-cat="saias-shorts" href="categoria.html?cat=saias-shorts">Saias e shorts</a></li>
+        <li><a class="nav-link" data-cat="calcas" href="categoria.html?cat=calcas">Calças</a></li>
+        <li><a class="nav-link" data-cat="acessorios" href="categoria.html?cat=acessorios">Acessórios</a></li>
+        <li><a class="nav-link nav-link--sale" data-cat="sale" href="categoria.html?cat=sale">Sale</a></li>
+      </ul>
+    </nav>
+    <div class="acoes">
+      <button class="acao" id="btn-busca" aria-label="Buscar" aria-expanded="false" aria-controls="busca-barra">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <a class="acao" href="atendimento.html#contato" aria-label="Atendimento">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      </a>
+      <a class="acao" href="carrinho.html" aria-label="Carrinho de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+        <span class="contador" id="cont-carrinho" hidden>0</span>
+      </a>
+    </div>
+  </div>
+  <div class="busca-barra" id="busca-barra" hidden>
+    <form class="busca-form" id="busca-form" role="search">
+      <label class="sr-only" for="busca-input">Buscar produtos</label>
+      <input type="search" id="busca-input" placeholder="Busque por vestido, blusa, cor…" autocomplete="off">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+    </form>
+    <div class="sugestoes" id="busca-sugestoes" hidden></div>
+  </div>
+</header>
+
+<div class="menu-movel" id="menu-movel">
+  <div class="menu-movel-topo">
+    <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+    <button class="acao" id="menu-fechar" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Menu móvel">
+    <a href="categoria.html?cat=novidades">Novidades</a>
+    <a href="categoria.html?cat=roupas">Roupas</a>
+    <a href="categoria.html?cat=vestidos">Vestidos</a>
+    <a href="categoria.html?cat=conjuntos">Conjuntos</a>
+    <a href="categoria.html?cat=blusas">Blusas</a>
+    <a href="categoria.html?cat=saias-shorts">Saias e shorts</a>
+    <a href="categoria.html?cat=calcas">Calças</a>
+    <a href="categoria.html?cat=acessorios">Acessórios</a>
+    <a href="categoria.html?cat=sale" style="color:var(--vinho)">Sale</a>
+    <a href="sobre.html">Sobre a loja</a>
+    <a href="atendimento.html">Atendimento</a>
+  </nav>
+</div>
+
+<main>
+  <div class="pagina-topo">
+    <div class="container">
+      <div class="migalha"><a href="index.html">Início</a><span>/</span><strong>Sobre a loja</strong></div>
+      <span class="eyebrow">Nossa história</span>
+      <h1 class="titulo-sec" style="margin-top:8px">Moda que acompanha a sua rotina</h1>
+      <p class="suave" style="margin-top:12px;max-width:58ch">
+        A Aurora nasceu de uma vontade simples: facilitar o dia em que você abre o armário
+        e nada parece combinar com o seu plano.
+      </p>
+    </div>
+  </div>
+
+  <section class="secao" style="padding-top:34px">
+    <div class="container grade-duas">
+      <img src="assets/img/p15.jpg" alt="Mulher usando peça da coleção Aurora" width="900" height="1125">
+      <div class="conteudo-prosa">
+        <h2 style="margin-top:0">Como tudo começou</h2>
+        <p>
+          A Aurora começou em 2019, numa sala em São Paulo, com uma vitrine pequena e a
+          certeza de que roupa boa não precisa ser complicada. A gente escolhia cada peça
+          pela mão: como cai, como combina, como aguenta o dia inteiro.
+        </p>
+        <p>
+          Hoje somos uma equipe de 12 pessoas que conversa com centenas de clientes por
+          semana — no WhatsApp, nas redes e por aqui. Esse contato é o nosso compasso:
+          é ouvindo você que decidimos o que entra no catálogo.
+        </p>
+        <p>
+          Seguimos com o mesmo critério de sempre: <strong>tecidos que respeitam a pele</strong>,
+          modelagens que valorizam corpos reais e preços que fazem sentido no mês.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao secao--suave">
+    <div class="container">
+      <div class="secao-topo">
+        <div>
+          <span class="eyebrow">O que nos guia</span>
+          <h2 class="titulo-sec" style="margin-top:8px">Nossos compromissos</h2>
+        </div>
+      </div>
+      <div class="contato-grade">
+        <div class="contato-caixa">
+          <h3>Escolha com critério</h3>
+          <p>Poucas peças por coleção, todas testadas em corpos reais antes de entrar no catálogo. Se não vestir bem em alguém da equipe, não entra.</p>
+        </div>
+        <div class="contato-caixa">
+          <h3>Atendimento de gente</h3>
+          <p>Quem responde no WhatsApp é a mesma pessoa que embala o seu pedido. Sem robôs, sem fila infinita, com resposta no mesmo dia.</p>
+        </div>
+        <div class="contato-caixa">
+          <h3>Troca sem drama</h3>
+          <p>A primeira troca é por nossa conta em até 30 dias. Escolheu o tamanho errado? A gente resolve junto.</p>
+        </div>
+        <div class="contato-caixa">
+          <h3>Preço justo o ano inteiro</h3>
+          <p>Promoção de verdade, sem inflar o preço antes. E o frete grátis acima de R$ 299 vale para todo o Brasil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="container grade-duas">
+      <div class="conteudo-prosa">
+        <h2 style="margin-top:0">Do ateliê à sua porta</h2>
+        <p>
+          Trabalhamos com fornecedores do Brasil e de parceiros importadores auditados.
+          Cada lote passa por checagem de costura, tingimento e medida antes de ser separado.
+        </p>
+        <ul>
+          <li>Embalagem reutilizável, sem plástico descartável</li>
+          <li>Peças de baixo impacto: viscolinho, algodão e viscose certificada</li>
+          <li>Estoque controlado — o que está na site está na prateleira</li>
+          <li>Pedido até 14h sai no mesmo dia útil</li>
+        </ul>
+        <a class="btn btn--contorno" href="categoria.html" style="margin-top:8px">Ver o catálogo</a>
+      </div>
+      <img src="assets/img/p31.jpg" alt="Detalhe de tecido e acabamento das peças" width="900" height="1125">
+    </div>
+  </section>
+
+  <section class="faixa-info">
+    <div class="container">
+      <ul>
+        <li>
+          <h3>Desde 2019</h3>
+          <p>Mais de 40 mil pedidos entregues em todo o Brasil.</p>
+        </li>
+        <li>
+          <h3>4,8 de nota</h3>
+          <p>Avaliação média de quem já vestiu a Aurora.</p>
+        </li>
+        <li>
+          <h3>Troca fácil</h3>
+          <p>Primeira troca por nossa conta em até 30 dias.</p>
+        </li>
+        <li>
+          <h3>Fale com gente</h3>
+          <p>WhatsApp respondido de segunda a sábado, das 9h às 19h.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="secao secao--suave" style="padding-block:clamp(40px,6vw,70px)">
+    <div class="container" style="text-align:center;max-width:640px">
+      <span class="eyebrow">Vem ver de perto</span>
+      <h2 class="titulo-sec" style="margin-top:10px">Pronta para escolher a sua?</h2>
+      <p class="suave" style="margin-top:12px">As novidades chegam toda semana — e a gente avisa você primeiro.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+        <a class="btn btn--primario btn--grande" href="categoria.html?cat=novidades">Ver novidades</a>
+        <a class="btn btn--contorno btn--grande" href="atendimento.html#contato">Falar com a loja</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+        <p class="rodape-texto">Moda feminina versátil para o dia a dia e para os dias marcados na agenda.</p>
+        <div class="redes">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.3-5.4s-.3-.6-.3-1.6c0-1.5.9-2.6 2-2.6.9 0 1.4.7 1.4 1.5 0 .9-.6 2.3-.9 3.6-.3 1.1.5 2 1.6 2 1.9 0 3.4-2 3.4-5 0-2.6-1.9-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1.1 0-2.1-.6-2.4-1.2l-.7 2.5c-.2.9-.9 2.1-1.4 2.8A10 10 0 1 0 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Comprar</h3>
+        <ul>
+          <li><a href="categoria.html?cat=novidades">Novidades</a></li>
+          <li><a href="categoria.html?cat=vestidos">Vestidos</a></li>
+          <li><a href="categoria.html?cat=conjuntos">Conjuntos</a></li>
+          <li><a href="categoria.html?cat=acessorios">Acessórios</a></li>
+          <li><a href="categoria.html?cat=sale">Sale</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ajuda</h3>
+        <ul>
+          <li><a href="atendimento.html#entrega">Entrega e frete</a></li>
+          <li><a href="atendimento.html#trocas">Trocas e devoluções</a></li>
+          <li><a href="atendimento.html#pagamento">Formas de pagamento</a></li>
+          <li><a href="atendimento.html#faq">Perguntas frequentes</a></li>
+          <li><a href="atendimento.html#contato">Contato e WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="sobre.html">Sobre a loja</a></li>
+          <li><a href="atendimento.html">Atendimento</a></li>
+          <li><a href="atendimento.html#trocas">Trocas e devoluções</a></li>
+          <li><a href="atendimento.html#contato">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-base">
+      <span>© 2026 Aurora Moda Feminina · CNPJ 00.000.000/0001-00</span>
+      <div class="pagamentos">
+        <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Elo</span><span>Boleto</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="whats" id="whats" href="#" target="_blank" rel="noopener">
+  <span>Fale com a gente</span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

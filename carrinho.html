@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sacola — Aurora Moda Feminina</title>
+<meta name="description" content="Revise os itens da sua sacola, calcule o frete e finalize seu pedido na Aurora.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="">
+
+<div class="topo-faixa">
+  Frete grátis acima de <strong>R$ 299</strong> &nbsp;·&nbsp; Primeira troca por nossa conta em até 30 dias
+</div>
+
+<header class="cabecalho">
+  <div class="container cabecalho-int">
+    <button class="acao btn-menu" id="btn-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-movel">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+    <nav class="nav-principal" aria-label="Navegação principal">
+      <ul>
+        <li><a class="nav-link" data-cat="novidades" href="categoria.html?cat=novidades">Novidades</a></li>
+        <li><a class="nav-link" data-cat="roupas" href="categoria.html?cat=roupas">Roupas</a></li>
+        <li><a class="nav-link" data-cat="vestidos" href="categoria.html?cat=vestidos">Vestidos</a></li>
+        <li><a class="nav-link" data-cat="conjuntos" href="categoria.html?cat=conjuntos">Conjuntos</a></li>
+        <li><a class="nav-link" data-cat="blusas" href="categoria.html?cat=blusas">Blusas</a></li>
+        <li><a class="nav-link" data-cat="saias-shorts" href="categoria.html?cat=saias-shorts">Saias e shorts</a></li>
+        <li><a class="nav-link" data-cat="calcas" href="categoria.html?cat=calcas">Calças</a></li>
+        <li><a class="nav-link" data-cat="acessorios" href="categoria.html?cat=acessorios">Acessórios</a></li>
+        <li><a class="nav-link nav-link--sale" data-cat="sale" href="categoria.html?cat=sale">Sale</a></li>
+      </ul>
+    </nav>
+    <div class="acoes">
+      <button class="acao" id="btn-busca" aria-label="Buscar" aria-expanded="false" aria-controls="busca-barra">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <a class="acao" href="atendimento.html#contato" aria-label="Atendimento">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      </a>
+      <a class="acao" href="carrinho.html" aria-label="Carrinho de compras">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M6 7h12l1 14H5L6 7z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+        <span class="contador" id="cont-carrinho" hidden>0</span>
+      </a>
+    </div>
+  </div>
+  <div class="busca-barra" id="busca-barra" hidden>
+    <form class="busca-form" id="busca-form" role="search">
+      <label class="sr-only" for="busca-input">Buscar produtos</label>
+      <input type="search" id="busca-input" placeholder="Busque por vestido, blusa, cor…" autocomplete="off">
+      <button type="submit" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+    </form>
+    <div class="sugestoes" id="busca-sugestoes" hidden></div>
+  </div>
+</header>
+
+<div class="menu-movel" id="menu-movel">
+  <div class="menu-movel-topo">
+    <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+    <button class="acao" id="menu-fechar" aria-label="Fechar menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Menu móvel">
+    <a href="categoria.html?cat=novidades">Novidades</a>
+    <a href="categoria.html?cat=roupas">Roupas</a>
+    <a href="categoria.html?cat=vestidos">Vestidos</a>
+    <a href="categoria.html?cat=conjuntos">Conjuntos</a>
+    <a href="categoria.html?cat=blusas">Blusas</a>
+    <a href="categoria.html?cat=saias-shorts">Saias e shorts</a>
+    <a href="categoria.html?cat=calcas">Calças</a>
+    <a href="categoria.html?cat=acessorios">Acessórios</a>
+    <a href="categoria.html?cat=sale" style="color:var(--vinho)">Sale</a>
+    <a href="sobre.html">Sobre a loja</a>
+    <a href="atendimento.html">Atendimento</a>
+  </nav>
+</div>
+
+<main>
+  <div class="pagina-topo">
+    <div class="container">
+      <div class="migalha"><a href="index.html">Início</a><span>/</span><strong>Sua sacola</strong></div>
+      <span class="eyebrow">Quase lá</span>
+      <h1 class="titulo-sec" style="margin-top:8px">Sua sacola</h1>
+    </div>
+  </div>
+
+  <section class="secao" style="padding-top:26px">
+    <div class="container">
+
+      <!-- Estado vazio -->
+      <div class="carrinho-vazio" id="carrinho-vazio" hidden>
+        <h2>Sua sacola está vazia</h2>
+        <p>Que tal começar pelas novidades? Tem peça nova chegando toda semana.</p>
+        <a class="btn btn--primario btn--grande" href="categoria.html?cat=novidades">Ver novidades</a>
+        <a class="btn btn--contorno btn--grande" href="categoria.html" style="margin-left:10px">Ver catálogo</a>
+      </div>
+
+      <!-- Itens + resumo -->
+      <div class="carrinho-layout" id="carrinho-layout" hidden>
+        <div>
+          <div class="carrinho-lista" id="carrinho-lista"></div>
+          <p class="mini suave" style="margin-top:18px">
+            Precisa de ajuda com o tamanho?
+            <a href="atendimento.html#contato" style="color:var(--marrom);text-decoration:underline;text-underline-offset:2px">Fale com a gente</a> —
+            respondemos rápido no WhatsApp.
+          </p>
+        </div>
+
+        <aside class="resumo" aria-label="Resumo do pedido">
+          <h2>Resumo</h2>
+          <div class="resumo-linha"><span>Subtotal (<span id="resumo-qtd">0</span> itens)</span><span id="resumo-subtotal">R$ 0,00</span></div>
+          <div class="resumo-linha" id="linha-desconto" hidden><span>Desconto</span><span id="resumo-desconto">− R$ 0,00</span></div>
+          <div class="resumo-linha"><span>Frete</span><span id="resumo-frete">calculado no CEP</span></div>
+          <div class="resumo-linha resumo-total"><span>Total</span><span id="resumo-total">R$ 0,00</span></div>
+          <p class="resumo-frete" id="frete-info">Informe o CEP para calcular o frete e o prazo.</p>
+
+          <div class="frete-caixa">
+            <h3>Calcular frete</h3>
+            <form class="frete-form" id="frete-form">
+              <label class="sr-only" for="frete-cep">CEP</label>
+              <input type="text" id="frete-cep" inputmode="numeric" maxlength="9" placeholder="00000-000" autocomplete="postal-code">
+              <button type="submit">Calcular</button>
+            </form>
+            <p class="frete-resultado" id="frete-resultado" hidden></p>
+          </div>
+
+          <div class="cupom">
+            <label class="sr-only" for="cupom-input">Cupom de desconto</label>
+            <input type="text" id="cupom-input" placeholder="Cupom de desconto" autocomplete="off">
+            <button type="button" id="cupom-btn">Aplicar</button>
+          </div>
+          <p class="mensagem-cupom" id="cupom-msg" hidden></p>
+
+          <button class="btn btn--primario btn--grande btn--largo" id="btn-checkout">Finalizar compra</button>
+          <p class="resumo-seguro">Pagamento seguro · Pix, cartão em até 3x sem juros ou boleto</p>
+        </aside>
+      </div>
+
+      <!-- Pedido confirmado (checkout simulado) -->
+      <div class="carrinho-vazio" id="pedido-ok" hidden>
+        <h2>Pedido recebido!</h2>
+        <p id="pedido-texto">Obrigada pela compra. Você recebe a confirmação por e-mail em instantes.</p>
+        <p class="mini suave">Protótipo demonstrativo: nenhuma cobrança foi feita.</p>
+        <a class="btn btn--primario btn--grande" href="index.html" style="margin-top:22px">Voltar ao início</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="container">
+    <div class="rodape-grade">
+      <div>
+        <a href="index.html" class="marca">Aur<span>o</span>ra</a>
+        <p class="rodape-texto">Moda feminina versátil para o dia a dia e para os dias marcados na agenda.</p>
+        <div class="redes">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.3-5.4s-.3-.6-.3-1.6c0-1.5.9-2.6 2-2.6.9 0 1.4.7 1.4 1.5 0 .9-.6 2.3-.9 3.6-.3 1.1.5 2 1.6 2 1.9 0 3.4-2 3.4-5 0-2.6-1.9-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4.1.1.1.2.1.3l-.3 1.1c0 .2-.2.2-.4.1-1.3-.6-2.1-2.5-2.1-4 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6 0 3.6-2.3 6.5-5.4 6.5-1.1 0-2.1-.6-2.4-1.2l-.7 2.5c-.2.9-.9 2.1-1.4 2.8A10 10 0 1 0 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h3>Comprar</h3>
+        <ul>
+          <li><a href="categoria.html?cat=novidades">Novidades</a></li>
+          <li><a href="categoria.html?cat=vestidos">Vestidos</a></li>
+          <li><a href="categoria.html?cat=conjuntos">Conjuntos</a></li>
+          <li><a href="categoria.html?cat=acessorios">Acessórios</a></li>
+          <li><a href="categoria.html?cat=sale">Sale</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Ajuda</h3>
+        <ul>
+          <li><a href="atendimento.html#entrega">Entrega e frete</a></li>
+          <li><a href="atendimento.html#trocas">Trocas e devoluções</a></li>
+          <li><a href="atendimento.html#pagamento">Formas de pagamento</a></li>
+          <li><a href="atendimento.html#faq">Perguntas frequentes</a></li>
+          <li><a href="atendimento.html#contato">Contato e WhatsApp</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="sobre.html">Sobre a loja</a></li>
+          <li><a href="atendimento.html">Atendimento</a></li>
+          <li><a href="atendimento.html#trocas">Trocas e devoluções</a></li>
+          <li><a href="atendimento.html#contato">Privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rodape-base">
+      <span>© 2026 Aurora Moda Feminina · CNPJ 00.000.000/0001-00</span>
+      <div class="pagamentos">
+        <span>Pix</span><span>Visa</span><span>Mastercard</span><span>Elo</span><span>Boleto</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="whats" id="whats" href="#" target="_blank" rel="noopener">
+  <span>Fale com a gente</span>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.8-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.7-.9-2.9-1.6-4-3.6-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6 2 .8 2.7.9 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+</a>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/carrinho.js"></script>
+</body>
+</html>
